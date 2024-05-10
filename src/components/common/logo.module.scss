@@ -1,0 +1,16 @@
+@use "../../sass/colors.scss" as colors;
+
+.logo {
+  &_wrapper {
+    gap: 5px;
+  }
+  &_icon {
+    color: colors.$primary-color;
+  }
+  &_text {
+    color: colors.$primary-color;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+  }
+}

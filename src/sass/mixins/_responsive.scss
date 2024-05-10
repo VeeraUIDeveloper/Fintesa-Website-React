@@ -1,0 +1,40 @@
+$breakpoint-up-sm: 576px;
+$breakpoint-up-md: 768px;
+$breakpoint-up-lg: 992px;
+$breakpoint-up-xl: 1200px;
+$breakpoint-up-xxl: 1400px;
+
+// Small devices (landscape phones, 576px and up)
+@mixin sm() {
+  @media (min-width: $breakpoint-up-sm) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin md() {
+  @media (min-width: $breakpoint-up-md) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg() {
+  @media (min-width: $breakpoint-up-lg) {
+    @content;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin xl() {
+  @media (min-width: $breakpoint-up-xl) {
+    @content;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin xxl() {
+  @media (min-width: $breakpoint-up-xxl) {
+    @content;
+  }
+}

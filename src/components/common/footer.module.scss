@@ -1,0 +1,51 @@
+@use "../../sass/colors.scss" as colors;
+
+.footer {
+  padding: 3rem 0 1rem;
+  &.bg_primary {
+    background-color: colors.$primary-color;
+  }
+  &_main {
+    gap: 0;
+  }
+  &_inner {
+    padding: 0 15px;
+    h6 {
+      font-size: 1rem;
+      font-weight: 500;
+      padding-bottom: 0.25rem;
+    }
+    a {
+      color: #f7f8f9;
+      font-size: 0.9rem;
+      padding-bottom: 12px;
+      display: block;
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+    p {
+      color: #f7f8f9;
+      font-size: 0.9rem;
+      line-height: 2;
+      padding-bottom: 12px;
+      margin: 0;
+    }
+  }
+  &_bottom {
+    border-top: 1px solid #ffffff;
+    padding-top: 1.5rem;
+    div {
+      > svg,
+      > span {
+        color: #ffffff;
+      }
+    }
+    p {
+      margin: 0;
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+  }
+}

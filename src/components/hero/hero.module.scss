@@ -13,6 +13,9 @@
       font-size: 18px;
       font-weight: 500;
       gap: 10px;
+      .logo_icon {
+        color: colors.$primary-color;
+      }
     }
     h1 {
       font-size: 2.5rem;

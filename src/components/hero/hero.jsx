@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className={`${classes.hero_inner} w-50`}>
             <div className={classes.hero_text}>
               <h5 className="d-flex align-items-center">
-                <RiMeteorFill size={20} className="logo-icon" />
+                <RiMeteorFill size={20} className={classes.logo_icon} />
                 We Are Best
               </h5>
               <h1>

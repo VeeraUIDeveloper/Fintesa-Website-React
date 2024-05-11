@@ -1,13 +1,18 @@
 @use "../../sass/colors.scss" as colors;
 
 .header_wrapper {
-  padding: 10px 0;
-  position: fixed;
+  padding: 15px 0;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   background: #ffffff;
   z-index: 10;
+  transition: all 0.5s;
+}
+.sticky_header {
+  background-color: #ffffff;
+  box-shadow: 10px -10px 20px 0px #c6c8e8;
 }
 .header_container {
   margin-bottom: 0;
@@ -17,6 +22,7 @@
   display: block;
   &_menu {
     gap: 40px;
+    margin: 0;
     li {
       a {
         color: #515279;

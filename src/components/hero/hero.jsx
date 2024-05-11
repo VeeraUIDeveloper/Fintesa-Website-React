@@ -8,9 +8,9 @@ import { SOCIAL_LINKS } from "../../constants/footer-data";
 
 const HeroSection = () => {
   return (
-    <section id="/" className={`${classes.hero}`}>
+    <section id="home" className={`${classes.hero}`}>
       <div className="container">
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="d-flex flex-wrap align-items-center justify-content-between">
           <div className={`${classes.hero_inner} w-50`}>
             <div className={classes.hero_text}>
               <h5 className="d-flex align-items-center">
@@ -28,10 +28,10 @@ const HeroSection = () => {
               </p>
             </div>
             <div className={classes.hero_download_apps}>
-              <a href="#">
+              <a href="#" className="hover_animation">
                 <img src={AppStore} alt="App Store Download Image" />
               </a>
-              <a href="#">
+              <a href="#" className="hover_animation">
                 <img src={PlayStore} alt="Play Store Download Image" />
               </a>
             </div>

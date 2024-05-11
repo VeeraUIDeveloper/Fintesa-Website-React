@@ -1,0 +1,25 @@
+@use "../sass/colors.scss" as colors;
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 20px;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  &_primary {
+    color: colors.$primary-color;
+  }
+  &_light {
+    border-color: lighten($color: colors.$primary-color, $amount: 40);
+    background-color: #f7f8ff;
+  }
+  &_dark,
+  &_sticky_true {
+    color: #ffffff;
+    background-color: colors.$primary-color;
+    border-color: colors.$primary-color;
+  }
+}

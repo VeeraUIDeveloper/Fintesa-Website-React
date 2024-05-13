@@ -1,5 +1,5 @@
 import classes from "./about.module.scss";
-import { ABOUT_CARD_DATA } from "../../constants/about-data";
+import { ABOUT_CARD_DATA } from "../../constants/about-data.jsx";
 
 const AboutSection = () => {
   return (

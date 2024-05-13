@@ -1,7 +1,7 @@
 @use "../../sass/colors.scss" as colors;
 
 .achievements {
-  background-color: #f7f8ff;
+  background-color: colors.$bg_light;
   &_wrapper {
     max-width: 90%;
     margin: 0 auto;

@@ -1,3 +1,5 @@
+@use "./colors.scss" as colors;
+
 @import "./reset.scss";
 @import "./colors.scss";
 @import "./variables.scss";
@@ -51,6 +53,15 @@
 .text-center {
   text-align: center;
 }
+.text-label {
+  font-size: 15px;
+  color: colors.$primary-color;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #cff4fc;
+  border-radius: 6px;
+  display: inline-block;
+}
 
 // Width
 .w-25 {
@@ -68,6 +79,10 @@
 
 section {
   padding: 80px 0;
+}
+
+.bg-light {
+  background-color: colors.$bg_light;
 }
 
 // Hover Animation

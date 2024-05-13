@@ -1,0 +1,45 @@
+@use "../../sass/colors.scss" as colors;
+
+.features {
+  background-color: colors.$bg_light;
+  &_wrapper {
+  }
+  &_image {
+    img {
+      width: 75%;
+    }
+  }
+  &_content {
+    padding-left: 5rem;
+    h4 {
+      font-weight: 600;
+      color: colors.$primary-color;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 55px;
+    }
+    p {
+      color: colors.$text_color;
+    }
+  }
+}
+
+.steps {
+  margin-top: 3rem;
+  &_content {
+    margin-top: 1rem;
+  }
+  &_count {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+  &_text {
+    border-bottom: 1px solid #d7d7d7;
+    p {
+      font-size: 1.15rem;
+      font-weight: 300;
+    }
+  }
+}

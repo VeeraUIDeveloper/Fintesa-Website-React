@@ -5,6 +5,7 @@ import AppFooter from "./components/common/footer.jsx";
 import HeroSection from "./components/hero/hero.jsx";
 import AchievementSection from "./components/home-page/achievements.jsx";
 import AboutSection from "./components/home-page/about.jsx";
+import FeatureSection from "./components/home-page/features.jsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <HeroSection />
       <AchievementSection />
       <AboutSection />
+      <FeatureSection />
       <AppFooter />
     </>
   );

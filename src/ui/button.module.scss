@@ -14,7 +14,7 @@
   }
   &_light {
     border-color: lighten($color: colors.$primary-color, $amount: 40);
-    background-color: #f7f8ff;
+    background-color: colors.$bg_light;
   }
   &_dark,
   &_sticky_true {

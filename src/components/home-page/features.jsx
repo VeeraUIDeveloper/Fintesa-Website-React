@@ -7,9 +7,7 @@ const FeatureSection = () => {
   return (
     <section id="features" className={classes.features}>
       <div className="container">
-        <div
-          className={`${classes.features_wrapper} d-flex justify-content-between`}
-        >
+        <div className="d-flex align-items-center justify-content-between gap-0">
           <div className={`${classes.features_image} w-50 text-center`}>
             <img src={FeaturesImage} alt="Features Image" />
           </div>
@@ -37,7 +35,7 @@ export const ServiceSteps = () => {
       {FEATURES_DATA.slice(0, 2).map((item) => (
         <div key={item.label} className={classes.steps_content}>
           <span className="text-label">{item.label}</span>
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center justify-content-between gap-0">
             <span
               className={`${classes.steps_count} w-25 d-flex align-items-center`}
             >

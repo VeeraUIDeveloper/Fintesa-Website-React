@@ -1,0 +1,52 @@
+@use "../../sass/colors.scss" as colors;
+
+.process {
+  &_wrapper {
+    h4 {
+      font-weight: 600;
+      color: colors.$primary-color;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 55px;
+    }
+    p {
+      color: colors.$text_color;
+    }
+  }
+  &_content {
+    margin-top: 5rem;
+    div {
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    .count {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      background-color: colors.$primary-color;
+      border-radius: 50px;
+      color: #ffffff;
+      position: absolute;
+      top: -15px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+    h3 {
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+    p {
+      color: colors.$text_color;
+    }
+    a {
+      color: colors.$primary-color;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: underline;
+    }
+  }
+}

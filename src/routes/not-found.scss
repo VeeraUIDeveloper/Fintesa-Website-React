@@ -1,0 +1,12 @@
+@use "../sass/colors.scss" as colors;
+
+.not-found {
+  background-color: colors.$bg_light;
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

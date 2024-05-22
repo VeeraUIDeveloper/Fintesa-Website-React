@@ -1,24 +1,19 @@
 import "./sass/main.scss";
+import { Routes, Route } from "react-router-dom";
 
-import AppHeader from "./components/common/header.jsx";
-import AppFooter from "./components/common/footer.jsx";
-import HeroSection from "./components/hero/hero.jsx";
-import AchievementSection from "./components/home-page/achievements.jsx";
-import AboutSection from "./components/home-page/about.jsx";
-import FeatureSection from "./components/home-page/features.jsx";
-import ProcessSection from "./components/home-page/process.jsx";
+import AppLayout from "./layout/app-layout.jsx";
+import Home from "./routes/home.component.jsx";
+import NotFound from "./routes/not-found.component.jsx";
+import { routes } from "./routes.js";
 
 const App = () => {
   return (
-    <>
-      <AppHeader />
-      <HeroSection />
-      <AchievementSection />
-      <AboutSection />
-      <FeatureSection />
-      <ProcessSection />
-      <AppFooter />
-    </>
+    <Routes>
+      <Route exact path={routes.index} element={<AppLayout />}>
+        <Route exact index element={<Home />} />
+        <Route exact path={routes.NOT_FOUND} element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 };
 

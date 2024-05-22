@@ -1,6 +1,6 @@
 export const NAV_MENUS = [
-  { text: "Home", link: "/" },
-  { text: "About Us", link: "/#about-us" },
+  { text: "Home", link: "/#home" },
+  { text: "About Us", link: "/#about" },
   { text: "Features", link: "/#features" },
   { text: "Download", link: "/#download" },
 ];
